@@ -24,12 +24,12 @@ class Shoe
     @size 
   end 
     
-  def materials=(shoe_materials)
-    @materials = shoe_materials
+  def material=(shoe_materials)
+    @material = shoe_materials
   end 
   
-  def materials
-    @materials
+  def material
+    @material
   end 
   
   def condition=(shoe_condition)
@@ -41,6 +41,7 @@ class Shoe
   end 
   
   def cobble 
+    puts "Your shoe is good as new!"
   end 
   
 end 
