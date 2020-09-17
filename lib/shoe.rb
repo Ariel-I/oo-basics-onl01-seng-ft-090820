@@ -1,45 +1,13 @@
 class Shoe
   
-  def initialize(brand)
+  attr_accessor :color, :size, :material, :condition
+  
+  attr_reader :brand
+  
+    def initialize(brand)
     @brand = brand 
   end 
-  
-  def brand 
-    @brand 
-  end 
-  
-  def color=(shoe_color)
-    @color = shoe_color 
-  end 
-  
-  def color 
-    @color 
-  end 
-  
-  def size=(shoe_size)
-    @size = shoe_size
-  end 
-  
-  def size 
-    @size 
-  end 
-    
-  def material=(shoe_materials)
-    @material = shoe_materials
-  end 
-  
-  def material
-    @material
-  end 
-  
-  def condition=(shoe_condition)
-    @condition = shoe_condition
-  end 
-  
-  def condition
-    @condition
-  end 
-  
+
   def cobble 
     self.condition = "new"
     puts "Your shoe is as good as new!"
